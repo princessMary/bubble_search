@@ -49,15 +49,15 @@ function getList(){
   //   word += ", programming";
   // }
   //
-  // if (word.includes(",")){
-  //   var partsOfWord = word.split(', ');
-  //   for (var w = 0; w < N; w++) {
-  //     if (partsOfWord[w] == "coding" || partsOfWord[w]== "code" || partsOfWord[w]== "programming"){
-  //       partsOfWord.push("coding");
-  //       partsOfWord.push("programming");
-  //     }
-  //   }
-  // }
+  if (word.includes(",")){
+    var partsOfWord = word.split(', ');
+    for (var w = 0; w < N; w++) {
+      if (partsOfWord[w] == "coding" || partsOfWord[w]== "code" || partsOfWord[w]== "programming"){
+        partsOfWord.push("coding");
+        partsOfWord.push("programming");
+      }
+    }
+  }
 
   var listed_title = [];
   var listed_text = [];
