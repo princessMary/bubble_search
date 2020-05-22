@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 
-<title>Bubble course search</title>
+<title>Faceted course search</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -76,7 +76,7 @@ div.checkbox-custom2 {
 </div>
 <br>
 <div class="container">
-<button class="btn btn-primary" id="mybutton" type="submit" onclick="mur()">Search</button>
+<button class="btn btn-primary" id="mybutton" type="submit" onclick="chartTypeChanged()">Search</button>
 <br>
 
 
@@ -95,7 +95,7 @@ div.checkbox-custom2 {
 
 function mur(kurssit) {
 
-  kurssit = getList();
+  // kurssit = getList();
 
   var list_names = [];
   var list_credits = [];
@@ -441,10 +441,10 @@ function mur(kurssit) {
 function chartTypeChanged() {
   var courses = getList();
   // var courses = dataChanged();
-  print_list();
-  var chart = mur();
+  print_list(courses);
+  var chart = mur(courses);
   chart.update();
-  chart.render();
+  // chart.render();
 }
 
 // var button = document.getElementById( "mybutton" );
