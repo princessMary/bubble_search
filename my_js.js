@@ -482,8 +482,8 @@ function print_list(listed_text){
   var pituus = listed_text.length;
   var k = '<div>';
 
-   if (listed_text.length > 5){
-     pituus = 5;
+   if (listed_text.length > 10){
+     pituus =10;
    }
    k+= '<div><b>' + "Search results as a list: " + '</b><br></div>';
    k+= '<div><i>' + "Top 10 of " + listed_text.length + " courses" + '</i><br></div>';
