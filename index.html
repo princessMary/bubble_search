@@ -207,7 +207,7 @@ function mur(kurssit) {
       var arvo = Math.random();
       y_akseli.push(bsc_level-arvo);
     }
-    else if (courses[i]["level"].includes("Master")){
+    else if (courses[i]["level"].includes("Master") || courses[i]["level"].includes("Maister")){
       var arvo = Math.random();
       y_akseli.push(msc_level+arvo);
     }
@@ -636,7 +636,7 @@ function sort_object(obj) {
 <br>
 <br>
 
-//  <div class = "myboccer" id="printed_list"></div>
+
 
 </body>
 </html>
